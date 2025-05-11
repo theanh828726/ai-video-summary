@@ -22,7 +22,7 @@ if video_file:
         st.video(temp_video_path)
 
     with st.spinner("✨ Đang xử lý transcript (Whisper API)..."):
-        whisper_api = "https://whisper.openaiapi.dev/transcribe"
+        whisper_api = "https://whisper.aivio.workers.dev/transcribe"
         files = {'file': open(temp_video_path, 'rb')}
         response = requests.post(whisper_api, files=files)
 
