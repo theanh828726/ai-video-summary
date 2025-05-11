@@ -9,7 +9,7 @@ st.set_page_config(page_title="AI Video Summary - Thế Anh", layout="wide")
 st.title("🎥 AI Video Summary & Caption Generator")
 st.markdown("**by AI Thế Anh – Humanized AI for Business**")
 
-st.sidebar.image("https://raw.githubusercontent.com/thanhduongk17/ai-assets/main/logo-ai-theanh.png", width=200)
+st.sidebar.image("https://raw.githubusercontent.com/thanhduongk17/ai-assets/main/logo-aivio-ai.png", width=180)
 st.sidebar.write("### Chọn ngôn ngữ hiển thị")
 language = st.sidebar.radio("Ngôn ngữ", ["Tiếng Việt", "English", "Song ngữ"])
 
@@ -22,7 +22,7 @@ if video_file:
         st.video(temp_video_path)
 
     with st.spinner("✨ Đang xử lý transcript (Whisper API)..."):
-        whisper_api = "https://api.aivio.vn/whisper-transcribe"
+        whisper_api = "https://whisper.openaiapi.dev/transcribe"
         files = {'file': open(temp_video_path, 'rb')}
         response = requests.post(whisper_api, files=files)
 
