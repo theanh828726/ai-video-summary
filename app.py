@@ -9,7 +9,7 @@ st.set_page_config(page_title="AI Video Summary - Thế Anh", layout="wide")
 st.title("🎥 AI Video Summary & Caption Generator")
 st.markdown("**by AI Thế Anh – Humanized AI for Business**")
 
-st.sidebar.image("https://aivio.vn/assets/logo-aivio.svg", width=150)
+st.sidebar.image("https://raw.githubusercontent.com/thanhduongk17/ai-assets/main/logo-ai-theanh.png", width=200)
 st.sidebar.write("### Chọn ngôn ngữ hiển thị")
 language = st.sidebar.radio("Ngôn ngữ", ["Tiếng Việt", "English", "Song ngữ"])
 
